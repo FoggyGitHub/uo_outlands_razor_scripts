@@ -1,7 +1,10 @@
 # STEPS
 # setup a variable for your container that contains blank scrolls, pen and inks and cloth named: 
-# restock_container
-# make sure you have active counters for cloth and blank scrolls under Display/Counters and that they are check marked
+# Razor --> Scripts --> Options --> Add --> restock_container
+# make sure you have active counters for 
+# cloth (Name: cloth Format: cloth) and 
+# blank scrolls (Name: blankscrolls Format: blankscrolls) 
+# under # Razor --> Display/Counters (check mark cloth (cloth), blankscross (blankscrolls) & pen and ink (ik)
 
 if not findtype "pen and ink" backpack or count 'blankscrolls' < 10 or count 'cloth' < 10
     restock 4
@@ -60,7 +63,7 @@ elseif skill 'Inscription' < 120
     overhead "100 - 120: Magical Wizard's Hat"
     dclicktype "pen and ink" backpack
     waitforgump 949095101
-    gumpresponse 102
+    gumpresponse 103
     waitforgump 949095101
     gumpresponse 200
     waitforgump 949095101
